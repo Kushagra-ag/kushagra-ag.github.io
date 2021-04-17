@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+.notif__svg
+{
+	display: none;
+}
+
+.svg
+{
+	position: absolute;
+	opacity: 0.15;
+}
+
+.bulb1
+{
+    top: 0;
+    left: 55%;   
+}
+
+.hand1
+{
+	top: 30%;
+	left: 10%;
+}
+
+.bulb2
+{
+	top: 15%;
+	right: 10%;
+}
+
+.woman1
+{
+	top: 30%;
+	left: 10%;
+}
+
+.man1
+{
+	bottom: 20%;
+	right: 10%;
+}
+
+.woman2
+{
+	top: 10%;
+	left: 10%;
+}
+
+.svgs
+{
+	animation: svgAnim 6s 500ms infinite alternate linear forwards;
+}
+
+/*notification options*/
+/*.notif__content a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}*/
+
+@keyframes svgAnim
+{
+	from {stroke-dashoffset:0;}
+	to {stroke-dashoffset:3000px;}
+}
+
+@media only screen and (max-width: 800px)
+{
+	
+
+	.notif__svg
+	{
+		display: none!important;
+	}
+}
